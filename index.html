@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>YLY . 51 الأقصر | حوّل نفسك لشخصية هنيدي</title>
+<style>
+  :root {
+    --bg: #0b1220;
+    --card: #131c31;
+    --accent: #3b82f6;
+    --accent-glow: rgba(59, 130, 246, 0.45);
+    --text: #e8eefc;
+    --muted: #90a0bf;
+    --good: #22c55e;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at 50% 0%, #1a2540 0%, var(--bg) 60%);
+    color: var(--text);
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 16px 60px;
+  }
+  header { text-align: center; margin-bottom: 18px; max-width: 480px; }
+  header h1 { font-size: 20px; margin: 0 0 6px; }
+  header p { margin: 0; color: var(--muted); font-size: 14px; }
+
+  .steps {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 16px 18px;
+    max-width: 480px;
+    width: 100%;
+    margin-bottom: 22px;
+    font-size: 13.5px;
+    line-height: 1.9;
+    color: var(--muted);
+  }
+  .steps b { color: var(--text); }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    max-width: 480px;
+    width: 100%;
+  }
+
+  .char-card {
+    background: var(--card);
+    border-radius: 16px;
+    overflow: hidden;
+    padding-bottom: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+  .char-card img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    display: block;
+    background: #fff;
+  }
+  .char-card h3 {
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0 8px;
+  }
+  .char-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 0 10px;
+  }
+  .char-actions button, .char-actions a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12.5px;
+    padding: 9px 6px;
+    border-radius: 9px;
+    border: 1px solid #2c3a5c;
+    background: #0d1626;
+    color: var(--text);
+    cursor: pointer;
+  }
+  .char-actions .primary {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    border: none;
+    font-weight: bold;
+  }
+  .char-actions button.copied {
+    background: var(--good);
+    border-color: var(--good);
+    color: #06210f;
+  }
+
+  .ai-links {
+    max-width: 480px;
+    width: 100%;
+    margin-top: 26px;
+    background: var(--card);
+    border-radius: 16px;
+    padding: 16px 18px;
+  }
+  .ai-links h3 { font-size: 14px; margin: 0 0 10px; }
+  .ai-links .row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .ai-links a {
+    flex: 1;
+    min-width: 100px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #0d1626;
+    color: var(--text);
+    border: 1px solid #2c3a5c;
+  }
+
+  footer { margin-top: 24px; color: var(--muted); font-size: 12px; text-align: center; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>إيفنت YLY . 51 الأقصر</h1>
+  <p>اختار شخصيتك، هات صورتك، وحوّل نفسك بنفسك على أي ذكاء اصطناعي 😂</p>
+</header>
+
+<div class="steps">
+  <b>إزاي تستخدم الموقع؟</b><br/>
+  1️⃣ اختار الشخصية اللي عجبتك تحت<br/>
+  2️⃣ دوس "تحميل صورة الشخصية"<br/>
+  3️⃣ دوس "نسخ البرومبت"<br/>
+  4️⃣ افتح أي تطبيق ذكاء اصطناعي بتحبه (ChatGPT، Gemini، إلخ)، ارفع <b>صورتك أنت</b> + <b>صورة الشخصية اللي حملتها</b>، والصق البرومبت، وابعت<br/>
+  5️⃣ استنى النتيجة وشاركها معانا 🎉
+</div>
+
+<div class="grid" id="grid"></div>
+
+<div class="ai-links">
+  <h3>روح مباشرة لأي تطبيق ذكاء اصطناعي:</h3>
+  <div class="row">
+    <a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a>
+    <a href="https://gemini.google.com/app" target="_blank" rel="noopener">Gemini</a>
+    <a href="https://grok.com" target="_blank" rel="noopener">Grok</a>
+  </div>
+</div>
+
+<footer>YLY . 51 الأقصر — شباب يدير شباب</footer>
+
+<script src="characters-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
